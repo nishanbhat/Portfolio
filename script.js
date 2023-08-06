@@ -15,15 +15,15 @@ $(document).ready(function () {
     }
   });
 
-  let button = document.querySelector("body a");
-  button.addEventListener("click", () => {
-    const span = document.querySelector("a span");
-    button.style.paddingRight = "visible";
-    setTimeout(() => {
-      span.style.visibility = "hidden";
-      button.style.paddingRight = "0px";
-    }, 1000);
-  });
+  // let button = document.querySelector("body a");
+  // button.addEventListener("click", () => {
+  //   const span = document.querySelector("a span");
+  //   button.style.paddingRight = "visible";
+  //   setTimeout(() => {
+  //     span.style.visibility = "hidden";
+  //     button.style.paddingRight = "0px";
+  //   }, 1000);
+  // });
 
   // slide-up script
   $(".scroll-up-btn").click(function () {
@@ -45,14 +45,14 @@ $(document).ready(function () {
 
   // typing text animation script
   var typed = new Typed(".typing", {
-    strings: ["Frontend Developer", "UI/UX Designer"],
+    strings: ["UI/UX Designer", "Web Designer","Frontend Designer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
   });
 
   var typed = new Typed(".typing-2", {
-    strings: ["Frontend Developer", "UI/UX Designer"],
+    strings: ["UI/UX Designer", "Web Designer", "Frontend Designer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -64,7 +64,7 @@ $(document).ready(function () {
     loop: true,
     autoplay: true,
     autoplayTimeOut: 2000,
-    autoplayHoverPause: true,
+    autoplayHoverPause: false,
     responsive: {
       0: {
         items: 1,
