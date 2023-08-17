@@ -1,3 +1,5 @@
+new WOW().init();
+
 $(document).ready(function () {
   $(window).scroll(function () {
     // sticky navbar on scroll script
@@ -45,7 +47,7 @@ $(document).ready(function () {
 
   // typing text animation script
   var typed = new Typed(".typing", {
-    strings: ["UI/UX Designer", "Web Designer","Frontend Designer"],
+    strings: ["UI/UX Designer", "Web Designer", "Frontend Designer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -61,7 +63,7 @@ $(document).ready(function () {
   // owl carousel script
   $(".carousel").owlCarousel({
     margin: 20,
-    loop: true,
+    loop: false,
     autoplay: false,
     autoplayTimeOut: 2000,
     autoplayHoverPause: true,
