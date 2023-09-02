@@ -45,7 +45,7 @@ footer {
 }
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
+/* .skills .skills-content, */
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -205,24 +205,23 @@ section .title::after {
   color: #2b6055;
   font-weight: 500;
 }
-.home .home-content a{
-    display: inline-block;
+.home .home-content a {
+  display: inline-block;
   background-color: #222;
   background-image: linear-gradient(132deg, #222 20%, #2b6055 100%);
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    font-weight: 400;
-    border-radius: 6px;
-    border: 2px solid #2b6055;
-    transition: all 0.3s ease;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid #2b6055;
+  transition: all 0.3s ease;
 }
-.home .home-content a:hover{
-    color: #2b6055;
-    background: none;
+.home .home-content a:hover {
+  color: #2b6055;
+  background: none;
 }
-
 
 @keyframes a {
   0% {
@@ -253,8 +252,6 @@ section .title::after {
     transform: scale(1, 1);
   }
 }
-
-
 
 /* about section styling */
 .about .title::after {
@@ -356,7 +353,7 @@ section .title::after {
   content: "what i know";
 }
 .skills .skills-content .column {
-  width: calc(50% - 30px);
+  /* width: calc(50% - 30px); */
 }
 .skills .skills-content .left .text {
   font-size: 20px;
@@ -408,6 +405,13 @@ section .title::after {
   font-size: 18px;
   display: inline;
   align-items: center;
+}
+
+@media screen and {
+}
+
+.skill-list {
+  padding: 16px;
 }
 
 /* .skills .skills-content .right .techs li {
@@ -691,5 +695,17 @@ footer span a:hover {
     width: 35px;
     font-size: 23px;
     line-height: 38px;
+  }
+  .skills .skills-content .right span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .skills .skills-content .right span {
+    font-size: 10px;
+  }
+  .skills .skills-content .column,
+  .contact .contact-content .column {
+    margin-bottom: 0px;
   }
 }
