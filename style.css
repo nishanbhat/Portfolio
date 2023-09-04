@@ -708,4 +708,18 @@ footer span a:hover {
   .contact .contact-content .column {
     margin-bottom: 0px;
   }
+  .contact .contact-content .row i {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+section {
+    padding: 50px 0;
+}
+.lastp {
+
+    font-size: 15px;
+    margin: 0px;
+    padding: 0 25px 25px;
+}
 }
